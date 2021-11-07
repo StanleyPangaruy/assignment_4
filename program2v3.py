@@ -17,4 +17,4 @@ def totalAmount(appleF,orangeF,pApple,pOrange):
     print(f'The total amount is {_total} pesos.')
     
 applePrice,orangePrice,apple,orange = setPriceAndGetNumber()
-totalAmount(applePrice,orangePrice,apple,orange,)
+totalAmount(applePrice,orangePrice,apple,orange)
