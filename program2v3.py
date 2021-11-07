@@ -9,7 +9,7 @@ def setPriceAndGetNumber():
     orangePrice_ = 25
     apple_ = int(input('Number of apples (20 pesos each): '))
     orange_ = int(input('Number of oranges (25 pesos each): '))
-    return applePrice_, orangePrice_, apple_, orange_, 
+    return applePrice_, orangePrice_, apple_, orange_ 
 
 #Step 2: define the function for getting the total and to display it. 
 def totalAmount(appleF,orangeF,pApple,pOrange):
