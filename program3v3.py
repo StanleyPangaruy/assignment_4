@@ -9,4 +9,11 @@ def getMoneyAndPrice():
     _price = int(input('Price per apple: '))
     return _money, _price
 
+#Step 2: define the function that computes for the max apple and change then display it. 
+def maxApple(_money,_price):
+    _maxApple = _money//_price
+    change = _money-_maxApple*_price
+    print(f'You can buy {_maxApple} apples and your change is {change} pesos.')
+
 money, price = getMoneyAndPrice()
+maxApple(money,price)
