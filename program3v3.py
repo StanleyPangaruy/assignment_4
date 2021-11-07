@@ -13,7 +13,14 @@ def getMoneyAndPrice():
 def maxApple(_money,_price):
     _maxApple = _money//_price
     change = _money-_maxApple*_price
-    print(f'You can buy {_maxApple} apples and your change is {change} pesos.')
+    if _maxApple and change != 0:
+        print(f'You can buy {_maxApple} apples and your change is {change} pesos.')
+    elif _maxApple > 1 and change == 0:
+        print(f'You can buy {_maxApple} apples and you have no change.')
+    elif _maxApple == 1 and change == 0:
+        print(f'You can buy an apple and you have no change.')
+    else:
+        print('You have insufficient money.')
 
 money, price = getMoneyAndPrice()
 maxApple(money,price)
