@@ -17,13 +17,13 @@ def totalAmount(pApple,pOrange,appleF,orangeF,):
     totalOrange = orangeF*pOrange
     _total = totalApple + totalOrange
     if _total == 0:
-        print('Come back next time for more fruits')
+        print('Check back next time for more fruits')
     elif totalApple == 0:
-        print(f'Your total amount is {_total} pesos for {orangeF} orange(s).')
+        print(f'The total amount is {_total} pesos for {orangeF} orange(s).')
     elif totalOrange == 0:
-        print(f'Your total amount is {_total} pesos for {appleF} apple(s).')
+        print(f'The total amount is {_total} pesos for {appleF} apple(s).')
     else:
-        print(f'Your total amount is {_total} pesos for {appleF} apple(s) and {orangeF} orange(s).')
+        print(f'The total amount is {_total} pesos for {appleF} apple(s) and {orangeF} orange(s).')
 
 applePrice,orangePrice,apple,orange = setPriceAndGetNumber()
 totalAmount(applePrice,orangePrice,apple,orange)
