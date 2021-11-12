@@ -9,12 +9,17 @@ def setPriceAndGetNumber():
     orangePrice_ = 25
     apple_ = int(input('Number of apples (20 pesos each): '))
     orange_ = int(input('Number of oranges (25 pesos each): '))
-    return applePrice_, orangePrice_, apple_, orange_ 
+    return applePrice_, orangePrice_, apple_, orange_
 
 #Step 2: define the function for getting the total and to display it. 
-def totalAmount(appleF,orangeF,pApple,pOrange):
+def totalAmount(pApple,pOrange,appleF,orangeF,):
     _total = appleF*pApple + orangeF*pOrange
-    print(f'The total amount is {_total} pesos.')
-    
+    if orangeF == 0:
+        print(f'The total amount is {_total} pesos for {appleF} apple(s).')
+    elif appleF == 0:
+        print(f'The total amount is {_total} pesos for {orangeF} orange(s).')
+    else:
+        print(f'The total amount is {_total} pesos for {appleF} apple(s) and {orangeF} orange(s).')
+
 applePrice,orangePrice,apple,orange = setPriceAndGetNumber()
 totalAmount(applePrice,orangePrice,apple,orange)
